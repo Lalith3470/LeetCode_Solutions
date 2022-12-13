@@ -10,5 +10,4 @@ class Solution:
                 i+=1
             else:
                 st=st[1:]
-
         return cnt
