@@ -5,4 +5,3 @@ class Solution:
             if i!=val:
                 l.append(i)
         nums[:]=l
-        return len(nums)
