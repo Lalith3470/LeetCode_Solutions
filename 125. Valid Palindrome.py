@@ -6,9 +6,4 @@ class Solution:
             if s[i].isalnum():
                 a+=s[i].lower()
         
-        if len(a)<1:
-            return True
-        if a == a[::-1] :
-            return True
-        else:
-            return False
+        return len(a)<1 or a==a[::-1]
