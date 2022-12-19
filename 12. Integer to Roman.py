@@ -6,4 +6,5 @@ class Solution:
             while num >= i:
                 a += l[i]
                 num -= i
+                
         return a
