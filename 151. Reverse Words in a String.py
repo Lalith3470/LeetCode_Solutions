@@ -7,4 +7,5 @@ class Solution:
                 a+=s[i]
             else:
                 a+=s[i]+' '
+                
         return a
