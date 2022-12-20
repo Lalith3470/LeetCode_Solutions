@@ -4,6 +4,5 @@ class Solution:
         count=Counter(arr)
         
         for i,j in count.items():
-            lst.append(j)
-            
+            lst.append(j) 
         return len(set(lst))==len(lst)
