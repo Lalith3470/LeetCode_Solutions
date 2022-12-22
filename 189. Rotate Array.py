@@ -5,6 +5,5 @@ class Solution:
         """
         for i in range(k % len(nums)):
             nums.insert(0, nums.pop())
-        
         nums[:] = nums
         
