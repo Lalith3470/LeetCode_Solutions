@@ -1,13 +1,15 @@
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         lst=[]
         while head:
             lst.append(head.val)
             head=head.next
+        lst=lst[::-1]
         ans=[]
-        for i in range(0,len(lst),2):
-            val=lst[i:i+2]
-            ans+=val[::-1]
+        for i in range(len(lst)):
+            if i!=n-1:
+                ans.append(lst[i])
+        ans=ans[::-1]
         final=ListNode(0)
         tmp=final
         for i in ans:
