@@ -1,4 +1,5 @@
 class Solution:
+    
     def commonChars(self, words: List[str]) -> List[str]:
         cmn=Counter(words[0])
         for word in range(1,len(words)):
